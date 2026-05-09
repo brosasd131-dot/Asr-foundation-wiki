@@ -1,0 +1,225 @@
+<!-- ================================================= -->
+<!-- FILE: cedod.html                                  -->
+<!-- ================================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Cedod Wiki</title>
+
+<style>
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:black;
+    color:white;
+}
+
+/* ========================= */
+/* TOP BAR */
+/* ========================= */
+
+.topbar{
+    background:#8b0000;
+    color:white;
+    padding:20px;
+    font-size:32px;
+    font-weight:bold;
+    border-bottom:3px solid red;
+}
+
+/* ========================= */
+/* MAIN LAYOUT */
+/* ========================= */
+
+.container{
+    display:flex;
+}
+
+/* ========================= */
+/* SIDEBAR */
+/* ========================= */
+
+.sidebar{
+    width:250px;
+    background:#111;
+    height:100vh;
+    padding:15px;
+    box-sizing:border-box;
+    border-right:2px solid red;
+}
+
+/* ========================= */
+/* MENU BUTTONS */
+/* ========================= */
+
+.sidebar a{
+    display:block;
+    text-decoration:none;
+    background:red;
+    color:white;
+    padding:14px;
+    margin-bottom:12px;
+    border-radius:10px;
+    font-size:17px;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#cc0000;
+    transform:scale(1.03);
+}
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+
+.content{
+    flex:1;
+    padding:25px;
+    box-sizing:border-box;
+}
+
+/* ========================= */
+/* ARTICLE BOX */
+/* ========================= */
+
+.article{
+    background:#111;
+    padding:25px;
+    border-radius:15px;
+    border:2px solid red;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* ========================= */
+/* HEADINGS */
+/* ========================= */
+
+h1{
+    color:red;
+}
+
+/* ========================= */
+/* IMAGE */
+/* ========================= */
+
+img{
+    width:350px;
+    max-width:100%;
+    border-radius:15px;
+    border:3px solid red;
+    margin-top:20px;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:700px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        height:auto;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- TOP BAR -->
+<!-- ========================= -->
+
+<div class="topbar">
+
+    ASR WIKI
+
+</div>
+
+<!-- ========================= -->
+<!-- MAIN -->
+<!-- ========================= -->
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <a href="index.html">
+
+            Home
+
+        </a>
+
+        <a href="cedod.html">
+
+            Cedod Wiki
+
+        </a>
+
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="content">
+
+        <h1>Cedod</h1>
+
+        <div class="article">
+
+            Cedod is a mysterious creature
+            that appears in dark forests.
+
+            <br><br>
+
+            Some people say Cedod watches
+            silently from the shadows.
+
+            <br><br>
+
+            It protects hidden secrets
+            deep underground.
+
+            <br><br>
+
+            This image is loaded
+            directly from your server.
+
+            <br><br>
+
+            <!-- LOCAL IMAGE -->
+
+            <img src="images/cedod.png">
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
